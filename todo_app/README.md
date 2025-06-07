@@ -1,6 +1,6 @@
 # Todo List Application
 
-This is a simple Todo List application with a Python Flask backend and a plain HTML, CSS, and JavaScript frontend. It allows users to create, view, update (mark as completed/incomplete), and delete tasks.
+This is a simple Todo List application with a Python Flask backend and a plain HTML, CSS, and JavaScript frontend. It allows users to create, view, update (mark as completed/incomplete, edit task descriptions), and delete tasks.
 
 ## Project Structure
 
@@ -68,17 +68,13 @@ The frontend is built with HTML, CSS, and vanilla JavaScript.
 
 Unit tests are provided for the backend API.
 
-1.  **Navigate to the backend directory:**
-    (If you are not already there)
-    ```bash
-    cd todo_app/backend
-    ```
+1.  **Navigate to the project root directory** (e.g., the directory where `todo_app` is located). If you cloned the repository that contains `todo_app`, you might already be there.
 
-2.  **Ensure dependencies are installed** (see Backend Setup). If you are using a virtual environment, make sure it's activated.
+2.  **Ensure dependencies are installed** (see Backend Setup, especially regarding virtual environments). If you are using a virtual environment, make sure it's activated from within the `todo_app/backend` directory or that your project root's Python interpreter is the one with the dependencies. It's generally best to activate the virtual environment created in `todo_app/backend`.
 
 3.  **Run the unit tests:**
-    From the `todo_app/backend` directory, execute:
+    Execute the following command from your project root directory:
     ```bash
-    python -m unittest discover tests
+    python -m unittest discover todo_app/backend/tests
     ```
-    This command will discover and run all tests located in the `tests` subdirectory. You should see output indicating the number of tests run and their status (e.g., "OK" if all pass).
+    This command will discover and run all tests located in the `todo_app/backend/tests` subdirectory. You should see output indicating the number of tests run and their status (e.g., "OK" if all pass).

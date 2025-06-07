@@ -67,13 +67,59 @@ h1 {
     cursor: pointer;
 }
 
-#taskList li .delete-btn {
-    background-color: #d9534f;
-    color: white;
-    border: none;
+#taskList li .task-text {
+    flex-grow: 1; /* Allows text to take available space */
+    margin: 0 10px; /* Spacing around text */
+}
+
+#taskList li .edit-task-input {
+    flex-grow: 1;
+    margin-right: 5px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#taskList li button { /* General styling for buttons within li */
+    margin-left: 5px;
     padding: 5px 10px;
     border-radius: 4px;
+    border: none;
     cursor: pointer;
+    font-size: 0.9em;
+}
+
+#taskList li .edit-btn {
+    background-color: #f0ad4e; /* Orange */
+    color: white;
+}
+#taskList li .edit-btn:hover {
+    background-color: #ec971f;
+}
+
+#taskList li .save-btn {
+    background-color: #5cb85c; /* Green */
+    color: white;
+}
+#taskList li .save-btn:hover {
+    background-color: #4cae4c;
+}
+
+#taskList li .cancel-btn {
+    background-color: #777; /* Gray */
+    color: white;
+}
+#taskList li .cancel-btn:hover {
+    background-color: #666;
+}
+
+#taskList li .delete-btn {
+    background-color: #d9534f; /* Red */
+    color: white;
+    border: none; /* Already part of general button but good to be explicit */
+    padding: 5px 10px; /* Already part of general button */
+    border-radius: 4px; /* Already part of general button */
+    cursor: pointer; /* Already part of general button */
 }
 
 #taskList li .delete-btn:hover {
